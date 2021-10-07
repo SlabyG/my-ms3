@@ -7,10 +7,10 @@
     <title>The book of Recipe's </title>
 </head>
 <body>
-    {% for description in descriptions %}
-        {{ description.category_name }}<br>
-        {{ description.recipe_name }}<br>
-        {{ description.recipe_description }}<br>
+    {% for desc in description %}
+        {{ desc.category_name }}<br>
+        {{ desc.recipe_name }}<br>
+        {{ desc.recipe_description }}<br>
     {% endfor %}
 </body>
 </html>

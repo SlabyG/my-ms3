@@ -20,7 +20,7 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_description")
 def get_description():
-    description = mongo.db.tasks.find()
+    description = mongo.db.description.find()
     return render_template("description.html", description=description)
 
 
