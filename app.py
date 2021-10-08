@@ -27,10 +27,26 @@ def get_description():
 
 @app.route("/register_account", methods=["GET", "POST"])
 def register_account():
+    if request.method == "POST":
+        existing_user = mongo.db.users.find_one(
+            {"username": request.form.get("username").lower()})
+
+        if existing_user:
+            flash("Please use a different Username")
+            return redirect(url_for("register_account"))
+
+        register_account = {
+            "username": request.form.get("username").lower(),
+            "password": generate_password_hash(request.form.get("password"))
+        }
+        mongo.db.users.insert_one(register_account)
+
+        session["user"] = request.form.get("username").lower()
+        flash("You have registered Successfully!")
     return render_template("register_account.html")
 
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=True)
+            debug=False)
