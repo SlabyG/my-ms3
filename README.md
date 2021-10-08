@@ -1,8 +1,11 @@
 Technology used:
-1.RandomKeygen https://randomkeygen.com/ - Fort Knox Passwords to generate secret key
+
+1. RandomKeygen https://randomkeygen.com/ - Fort Knox Passwords to generate secret key
+2. Materialize https://materializecss.com/- Used for css and styling 
 
 
 Deployment on Heroku:
+
 1. Create account on Heroku. 
 2. After creating the account login.
 3. Click on New (top right corner) and select new app
