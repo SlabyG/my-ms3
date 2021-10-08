@@ -27,7 +27,7 @@
                     <li><a href="#">Add Recipe</a></li>
                     <li><a href="#">Log In</a></li>
                     <li><a href="#">Log Out</a></li>
-                    <li><a href="#">Register</a></li>
+                    <li><a href="{{ url_for('register_account') }}">Register</a></li>
                 </ul>
             </div>
         </nav>
@@ -35,7 +35,7 @@
         <ul class="sidenav" id="mobile-demo">
             <!--the codes for this navbar have been taken from materialize website and adjusted accordingly-->
             <li>
-                <h4 class="center-align amber-text darken-4">The book of Recipe's</h4>
+                <h4 class="center-align amber-text text-darken-4">The book of Recipe's</h4>
             </li>
             <li><a href="{{ url_for('get_description') }}">Home</a></li>
             <li><a href="#">Profile</a></li>
@@ -43,7 +43,7 @@
             <li><a href="#">Add Recipe</a></li>
             <li><a href="#">Log In</a></li>
             <li><a href="#">Log Out</a></li>
-            <li><a href="#">Register</a></li>
+            <li><a href="{{ url_for('register_account') }}">Register</a></li>
         </ul>
     </header>
 

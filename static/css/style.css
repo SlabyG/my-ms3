@@ -2,6 +2,14 @@
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6)
 }
 
+.brand-logo{
+    margin-left: 15px;
+}
+
 li {
     text-align: center;
+}
+
+#register-btn {
+    background-color: #ff6f00;
 }
