@@ -2,6 +2,11 @@ Technology used:
 
 1. RandomKeygen https://randomkeygen.com/ - Fort Knox Passwords to generate secret key
 2. Materialize https://materializecss.com/- Used for css and styling 
+3. jQuery https://jquery.com/
+4. cdnjs https://cdnjs.com/libraries/font-awesome/5.13.1 - Used for font awesome
+
+Colors used:
+#ff6f00
 
 
 Deployment on Heroku:
